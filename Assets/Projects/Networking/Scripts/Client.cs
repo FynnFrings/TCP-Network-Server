@@ -4,6 +4,7 @@ using UnityEngine;
 using System.Net;
 using System.Net.Sockets;
 using System;
+using GameServer;
 
 public class Client : MonoBehaviour
 {
@@ -23,6 +24,9 @@ public class Client : MonoBehaviour
 
     //TCP class
     public TCP tcp;
+
+    private delegate void PacketHandler(Packet _packet);
+    private static Dictionary<int, PacketHandler> packetHandlers;
 
     private void Awake()
     {
@@ -49,6 +53,8 @@ public class Client : MonoBehaviour
 
     public void ConnectToServer()
     {
+        InitializeClientData();
+
         //Calls the Connect() method
         tcp.Connect();
     }
@@ -58,6 +64,7 @@ public class Client : MonoBehaviour
         public TcpClient socket;
 
         private NetworkStream stream;
+        private Packet receivedData;
         private byte[] receiveBuffer;
 
         public void Connect()
@@ -90,8 +97,25 @@ public class Client : MonoBehaviour
             //gets the stream of the socket
             stream = socket.GetStream();
 
+            receivedData = new Packet();
+
             //begins to read the stream of the socket
             stream.BeginRead(receiveBuffer, 0, dataBufferSize, ReceiveCallback, null);
+        }
+
+        public void SendData(Packet _packet)
+        {
+            try
+            {
+                if (socket != null)
+                {
+                    stream.BeginWrite(_packet.ToArray(), 0, _packet.Length(), null, null);
+                }
+            }
+            catch (Exception _ex)
+            {
+                Debug.Log($"Error sending Data to server via TCP: {_ex}");
+            }
         }
 
         private void ReceiveCallback(IAsyncResult _result)
@@ -114,8 +138,8 @@ public class Client : MonoBehaviour
                 //copies the received buffer array to the data array using the length of the byte
                 Array.Copy(receiveBuffer, _data, _byteLength);
 
-                //TODO: handle Data
-
+                //handle Data
+                receivedData.Reset(HandleData(_data));
 
                 //begins to read the stream of the socket
                 stream.BeginRead(receiveBuffer, 0, dataBufferSize, ReceiveCallback, null);
@@ -126,5 +150,62 @@ public class Client : MonoBehaviour
                 //TODO: disconnect
             }
         }
+
+        private bool HandleData(byte[] _data)
+        {
+            int _packetLength = 0;
+
+            receivedData.SetBytes(_data);
+
+            if (receivedData.UnreadLength() >= 4)
+            {
+                _packetLength = receivedData.ReadInt();
+                if (_packetLength <= 0)
+                {
+                    return true;
+                }
+            }
+
+            while (_packetLength > 0 && _packetLength <= receivedData.UnreadLength())
+            {
+                byte[] _packetbBytes = receivedData.ReadBytes(_packetLength);
+
+                ThreadManager.ExecuteOnMainThread(() =>
+                {
+                    using (Packet _packet = new Packet(_packetbBytes))
+                    {
+                        int _packetId = _packet.ReadInt();
+                        packetHandlers[_packetId](_packet);
+                    }
+                });
+
+                _packetLength = 0;
+
+                if (receivedData.UnreadLength() >= 4)
+                {
+                    _packetLength = receivedData.ReadInt();
+                    if (_packetLength <= 0)
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            if (_packetLength <= 1)
+            {
+                return true;
+            }
+
+            return false;
+        }
+    }
+
+    private void InitializeClientData()
+    {
+        packetHandlers = new Dictionary<int, PacketHandler>()
+        {
+            { (int)ServerPackets.welcome, ClientHandle.Welcome }
+        };
+        Debug.Log("Initialized Packets.");
     }
 }
