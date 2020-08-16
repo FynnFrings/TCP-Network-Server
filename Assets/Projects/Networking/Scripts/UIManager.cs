@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
 
     public GameObject startMenu;
     public TMP_InputField usernameField;
+    public TMP_InputField ipAddressField;
 
     private void Awake()
     {
