@@ -10,19 +10,24 @@ using UnityEngine.UIElements;
 
 public class Client : MonoBehaviour
 {
+    #region ATTRIBUTES
+
     public static Client instance;
 
     //set the data buffer size
     public static int dataBufferSize = 4096;
 
     //local host IP address
-    public string ip = "127.0.0.1"; 
+    public string ip = "192.168.2.152";
+
+    //public host ip address
+    public string publicIp = "82.82.32.197";
 
     //port that is used
     public int port = 26950;
 
     //the id of the client
-    public int myId = 0;
+    [ReadOnly] public int myId = 0;
 
     //TCP class
     public TCP tcp;
@@ -31,13 +36,21 @@ public class Client : MonoBehaviour
     public UDP udp;
 
     //is true when connected
-    private bool isConnected = false;
+    [ReadOnly] public bool isConnected = false;
+
+    //the last detected latency in ms
+    [ReadOnly] public int latency;
+
+    //Time not connected
+    [ReadOnly] public float connectionLostSince = 0;
 
     //handles the packet
     private delegate void PacketHandler(Packet _packet);
 
     //Stores the packets
     private static Dictionary<int, PacketHandler> packetHandlers;
+
+    #endregion
 
     private void Awake()
     {
@@ -63,6 +76,11 @@ public class Client : MonoBehaviour
         udp = new UDP();
     }
 
+    private void FixedUpdate()
+    {
+        ConnectionCheck();
+    }
+
     private void OnApplicationQuit()
     {
         Disconnect();    
@@ -72,8 +90,6 @@ public class Client : MonoBehaviour
     {
         //Initializes the Data of the Client
         InitializeClientData();
-
-        isConnected = true;
 
         //Calls the Connect() method
         tcp.Connect();
@@ -387,11 +403,34 @@ public class Client : MonoBehaviour
         {
             //Welcome Packet
             { (int)ServerPackets.welcome, ClientHandle.Welcome },
+            { (int)ServerPackets.roomList, ClientHandle.RoomList },
             { (int)ServerPackets.spawnPLayer, ClientHandle.SpawnPlayer },
+            { (int)ServerPackets.spawnPlayersToRoom, ClientHandle.SpawnPlayersToRoom },
             { (int)ServerPackets.playerPosition, ClientHandle.PlayerPosition },
             { (int)ServerPackets.playerRotation, ClientHandle.PlayerRotation },
+            { (int)ServerPackets.PlayerDisconnected, ClientHandle.PlayerDisconnected },
+            { (int)ServerPackets.playerJoinedRoom, ClientHandle.PlayerJoinedRoom },
+            { (int)ServerPackets.noAvailableRoomFound, ClientHandle.NoAvailableRoomFound },
+            { (int)ServerPackets.disconnectAllPlayersFromRoom, ClientHandle.DisconnectAllPlayersFromRoom },
+            { (int)ServerPackets.pingReceived, ClientHandle.PingReceived },
         };
         Debug.Log("Initialized Packets.");
+    }
+
+    public void ConnectionCheck()
+    {
+        if (isConnected)
+        {
+            connectionLostSince += Time.deltaTime;
+
+            if (connectionLostSince > 5)
+            {
+                Disconnect();
+                UIManager.instance.LostConnection();
+
+                Debug.Log($"Connection Timed Out ({connectionLostSince}seconds)");
+            }
+        }
     }
 
     private void Disconnect()

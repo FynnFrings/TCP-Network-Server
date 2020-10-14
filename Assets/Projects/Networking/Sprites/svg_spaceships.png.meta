@@ -1,0 +1,982 @@
+fileFormatVersion: 2
+guid: bd026f71a3d354e4ab4377c973c9a8ff
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4861969578410247380
+    second: svg_spaceships_0
+  - first:
+      213: -4428661820114563224
+    second: svg_spaceships_1
+  - first:
+      213: -8102357832261961052
+    second: svg_spaceships_2
+  - first:
+      213: -2898870351881978671
+    second: svg_spaceships_3
+  - first:
+      213: 3959916226542916057
+    second: svg_spaceships_4
+  - first:
+      213: 5646914514245758835
+    second: svg_spaceships_5
+  - first:
+      213: 8170111174267656728
+    second: svg_spaceships_6
+  - first:
+      213: -8240395426918994265
+    second: svg_spaceships_7
+  - first:
+      213: 5209940580591476925
+    second: svg_spaceships_8
+  - first:
+      213: -597204493377556791
+    second: svg_spaceships_9
+  - first:
+      213: 6943412612519464082
+    second: svg_spaceships_10
+  - first:
+      213: -4986000542280401834
+    second: svg_spaceships_11
+  - first:
+      213: 1104975694924593277
+    second: svg_spaceships_12
+  - first:
+      213: 3890288314633302258
+    second: svg_spaceships_13
+  - first:
+      213: 4831932881966169035
+    second: svg_spaceships_14
+  - first:
+      213: 9118549936532630663
+    second: svg_spaceships_15
+  - first:
+      213: 6861636280668034986
+    second: svg_spaceships_16
+  - first:
+      213: -4039065162288432702
+    second: svg_spaceships_17
+  - first:
+      213: -6209508850432969009
+    second: svg_spaceships_18
+  - first:
+      213: -3327841483290529301
+    second: svg_spaceships_19
+  - first:
+      213: -3193894584896671654
+    second: svg_spaceships_20
+  - first:
+      213: -6235503396304174594
+    second: svg_spaceships_21
+  - first:
+      213: -6398167090464802353
+    second: svg_spaceships_22
+  - first:
+      213: 4841890118677169203
+    second: svg_spaceships_23
+  - first:
+      213: 392795376444151049
+    second: svg_spaceships_24
+  - first:
+      213: -272143501393435049
+    second: svg_spaceships_25
+  - first:
+      213: -6249042823112487679
+    second: svg_spaceships_26
+  - first:
+      213: -7862419418020737887
+    second: svg_spaceships_27
+  - first:
+      213: 2544765424822413526
+    second: svg_spaceships_28
+  - first:
+      213: 1938115530871442851
+    second: svg_spaceships_29
+  - first:
+      213: 4126554424295911709
+    second: svg_spaceships_30
+  - first:
+      213: -2273236674725680926
+    second: svg_spaceships_31
+  - first:
+      213: 2591297630918287657
+    second: svg_spaceships_32
+  - first:
+      213: 1405510814260806795
+    second: svg_spaceships_33
+  - first:
+      213: -6338483797013432389
+    second: svg_spaceships_34
+  - first:
+      213: 55321689585758974
+    second: svg_spaceships_35
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: svg_spaceships_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 594
+        width: 104
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2bf912ad60d68cb0800000000000000
+      internalID: -4861969578410247380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_1
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 594
+        width: 111
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f8cb5e98b3a82c0800000000000000
+      internalID: -4428661820114563224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_2
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 594
+        width: 107
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aafbecca74ae8f80800000000000000
+      internalID: -8102357832261961052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_3
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 594
+        width: 96
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dcb92a16c425c7d0800000000000000
+      internalID: -2898870351881978671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_4
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 594
+        width: 106
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d15567d3d274f630800000000000000
+      internalID: 3959916226542916057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_5
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 594
+        width: 105
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37fad9205dedd5e40800000000000000
+      internalID: 5646914514245758835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 475
+        width: 104
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a5cad63d0126170800000000000000
+      internalID: 8170111174267656728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_7
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 475
+        width: 111
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae6db9c40c34ad80800000000000000
+      internalID: -8240395426918994265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_8
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 475
+        width: 107
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db02c07ca5d6d4840800000000000000
+      internalID: 5209940580591476925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_9
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 475
+        width: 96
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cea6f96dad46b7f0800000000000000
+      internalID: -597204493377556791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_10
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 475
+        width: 106
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c803abbf4fb5060800000000000000
+      internalID: 6943412612519464082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_11
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 475
+        width: 105
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65cb87b7cea2ecab0800000000000000
+      internalID: -4986000542280401834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 356
+        width: 104
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78bb654a89a55f00800000000000000
+      internalID: 1104975694924593277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_13
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 356
+        width: 111
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f0329b4c941df530800000000000000
+      internalID: 3890288314633302258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_14
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 356
+        width: 107
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcb7f100b597e0340800000000000000
+      internalID: 4831932881966169035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_15
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 356
+        width: 96
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c20b9ead89b8e70800000000000000
+      internalID: 9118549936532630663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_16
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 356
+        width: 106
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa7962fb7dd693f50800000000000000
+      internalID: 6861636280668034986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_17
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 356
+        width: 105
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9742182ab52f7c0800000000000000
+      internalID: -4039065162288432702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 237
+        width: 104
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc67c44999463d9a0800000000000000
+      internalID: -6209508850432969009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_19
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 237
+        width: 111
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1b8a77dc121d1d0800000000000000
+      internalID: -3327841483290529301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_20
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 237
+        width: 107
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a50b0390cc10da3d0800000000000000
+      internalID: -3193894584896671654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_21
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 237
+        width: 96
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef14c8bb2ba0779a0800000000000000
+      internalID: -6235503396304174594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_22
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 237
+        width: 106
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9304f1ee42537a0800000000000000
+      internalID: -6398167090464802353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_23
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 237
+        width: 105
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3340a35d869d13340800000000000000
+      internalID: 4841890118677169203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 118
+        width: 104
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9059e52505d737500800000000000000
+      internalID: 392795376444151049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_25
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 118
+        width: 111
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75663876de6293cf0800000000000000
+      internalID: -272143501393435049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_26
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 118
+        width: 107
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d0d2649a0f649a0800000000000000
+      internalID: -6249042823112487679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_27
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 118
+        width: 96
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac8db9323313e290800000000000000
+      internalID: -7862419418020737887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_28
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 118
+        width: 106
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d86c3fcba2d05320800000000000000
+      internalID: 2544765424822413526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_29
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 118
+        width: 105
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ad82478ec195ea10800000000000000
+      internalID: 1938115530871442851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 104
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11797ea267744930800000000000000
+      internalID: 4126554424295911709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_31
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 0
+        width: 111
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e8e598d947d370e0800000000000000
+      internalID: -2273236674725680926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_32
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 0
+        width: 107
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921223e477326f320800000000000000
+      internalID: 2591297630918287657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_33
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 0
+        width: 96
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b844cfb83a0618310800000000000000
+      internalID: 1405510814260806795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_34
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 0
+        width: 106
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb7f170c19e2908a0800000000000000
+      internalID: -6338483797013432389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: svg_spaceships_35
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 0
+        width: 105
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef2322898ca84c000800000000000000
+      internalID: 55321689585758974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

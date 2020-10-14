@@ -9,16 +9,32 @@ namespace GameServer
     public enum ServerPackets
     {
         welcome = 1,
+        roomList,
         spawnPLayer,
+        spawnPlayersToRoom,
         playerPosition,
-        playerRotation
+        playerRotation,
+        PlayerDisconnected,
+        playerJoinedRoom,
+        noAvailableRoomFound,
+        disconnectAllPlayersFromRoom,
+        pingReceived,
     }
 
     /// <summary>Sent from client to server.</summary>
     public enum ClientPackets
     {
         welcomeReceived = 1,
-        playerMovement
+        setUsername,
+        createRoom,
+        joinRoom,
+        leaveRoom,
+        requestRoomList,
+        joinRandomMatch,
+        joinedSuccessfully,
+        ping,
+        playerMovement,
+        playerMousePosition,
     }
 
     public class Packet : IDisposable

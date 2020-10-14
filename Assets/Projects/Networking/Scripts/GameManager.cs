@@ -29,11 +29,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void SpawnPlayer(int _id, string _username, Vector3 _position, Quaternion _rotation)
+    public void SpawnPlayer(int _id, string _username, int _roomId, Vector3 _position, Quaternion _rotation)
     {
+        //Debug.Log("Contains: " + players.ContainsKey(_id) + " / " + _username);
+
         GameObject _player;
 
-        if(_id == Client.instance.myId)
+        if (_id == Client.instance.myId)
         {
             _player = Instantiate(localPlayerPrefab, _position, _rotation);
         }
@@ -44,7 +46,18 @@ public class GameManager : MonoBehaviour
 
         _player.GetComponent<PlayerManager>().id = _id;
         _player.GetComponent<PlayerManager>().username = _username;
+        _player.GetComponent<PlayerManager>().roomId = _roomId;
 
         players.Add(_id, _player.GetComponent<PlayerManager>());
+    }
+
+    public void DeleteAllPlayers()
+    {
+        foreach (var key in players.Keys)
+        {
+            Destroy(players[key].gameObject);
+        }
+
+        players.Clear();
     }
 }
